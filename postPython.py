@@ -55,8 +55,7 @@ def modeloRN():
 
     datos = preprocessing.scale(datos)
 
-    result = str(predecirRN(abrirModelo(
-        "E:\\Documentos JP\\Artificial\\Proyectos Python\\Flask\\RNModel.h5"), datos)[0])
+    result = str(predecirRN(abrirModelo("RNModel.h5"), datos)[0])
 
     d = {"result": result}
 
@@ -93,11 +92,9 @@ def modeloRNPCA():
 
     datos = preprocessing.scale(datos)
 
-    datos = transformarPCA(abrirModelo(
-        "E:\\Documentos JP\\Artificial\\Proyectos Python\\Flask\\PCAModel.h5"), datos)
+    datos = transformarPCA(abrirModelo("PCAModel.h5"), datos)
 
-    result = str(predecirRN(abrirModelo(
-        "E:\\Documentos JP\\Artificial\\Proyectos Python\\Flask\\RNPCAModel.h5"), datos)[0])
+    result = str(predecirRN(abrirModelo("RNPCAModel.h5"), datos)[0])
 
     d = {"result": result}
 
@@ -134,8 +131,7 @@ def modeloSVM():
 
     datos = preprocessing.scale(datos)
 
-    result = str(predecirSVM(abrirModelo(
-        "E:\\Documentos JP\\Artificial\\Proyectos Python\\Flask\\SVMModel.h5"), datos)[0])
+    result = str(predecirSVM(abrirModelo("SVMModel.h5"), datos)[0])
 
     d = {"result": result}
 
@@ -172,11 +168,9 @@ def modeloSVMPCA():
 
     datos = preprocessing.scale(datos)
 
-    datos = transformarPCA(abrirModelo(
-        "E:\\Documentos JP\\Artificial\\Proyectos Python\\Flask\\PCAModel.h5"), datos)
+    datos = transformarPCA(abrirModelo("PCAModel.h5"), datos)
 
-    result = str(predecirSVM(abrirModelo(
-        "E:\\Documentos JP\\Artificial\\Proyectos Python\\Flask\\SVMPCAModel.h5"), datos)[0])
+    result = str(predecirSVM(abrirModelo("SVMPCAModel.h5"), datos)[0])
 
     d = {"result": result}
 
@@ -213,8 +207,7 @@ def modeloKNN():
 
     datos = preprocessing.scale(datos)
 
-    result = str(predecirKNN(abrirModelo(
-        "E:\\Documentos JP\\Artificial\\Proyectos Python\\Flask\\KNNModel.h5"), datos)[0])
+    result = str(predecirKNN(abrirModelo("KNNModel.h5"), datos)[0])
 
     d = {"result": result}
 
@@ -251,11 +244,9 @@ def modeloKNNPCA():
 
     datos = preprocessing.scale(datos)
 
-    datos = transformarPCA(abrirModelo(
-        "E:\\Documentos JP\\Artificial\\Proyectos Python\\Flask\\PCAModel.h5"), datos)
+    datos = transformarPCA(abrirModelo("PCAModel.h5"), datos)
 
-    result = str(predecirKNN(abrirModelo(
-        "E:\\Documentos JP\\Artificial\\Proyectos Python\\Flask\\KNNPCAModel.h5"), datos)[0])
+    result = str(predecirKNN(abrirModelo("KNNPCAModel.h5"), datos)[0])
 
     d = {"result": result}
 
